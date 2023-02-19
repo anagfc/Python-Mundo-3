@@ -3,4 +3,4 @@ print('{:^70}'.format('Consulta de itens').upper())
 print('-' * 70)
 for item in range (0, len(estoque)):
     if item % 2 == 0:
-        print('{:.<65}R$ {:>4.2f}'.format(estoque[item], estoque[item+1]))
+        print('{:.<62} R${:>5.2f}'.format(estoque[item], estoque[item+1]))
