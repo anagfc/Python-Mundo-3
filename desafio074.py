@@ -10,3 +10,4 @@ for item in range(0, len(números)):
         maior = números[item]
 print(f'Maior número da sua tupla: {maior}')
 print(f'Menor número da sua tupla: {menor}')
+# É possível usar max(números) e min(números) para indicar, respectivamente, o maior e o menor números da tupla
