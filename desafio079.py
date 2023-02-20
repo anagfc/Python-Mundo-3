@@ -6,7 +6,13 @@ while True:
     else:
         números.append(inserir)
     novo = input('Novo número? [S/N] ').upper()
-    if novo in 'NNAONÃO':
+    if novo in 'NAONÃO':
         break
+    elif novo in 'SIM':
+        True
+    else:
+        print('Resposta não aceita.')
+        novo = input('Novo número? [S/N] ').upper()
+        
 números.sort()
 print(f'Sua lista é: {números}')
