@@ -7,3 +7,6 @@ if abertos == fechados:
 else:
     print('Expressão inválida.')
     
+# A solucionar:
+#   - Existência de caracteres entre ( e )
+#   - Ordem correta dos parênteses
