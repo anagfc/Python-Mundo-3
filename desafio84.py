@@ -3,16 +3,17 @@ dados = list()
 leves = list()
 pesadas = list()
 cadastrados = 0
-continuar = 'S'
 
 # Captação de dados
-while continuar == 'S':
+while True:
     dados.append(str(input('\nInsira o nome: ')))
     dados.append(float(input(f'Insira o peso de {dados[0]} em Kg: ')))
     cadastros.append(dados[:])
     cadastrados += 1
     dados.clear()
     continuar = str(input('Continuar cadastros? [S/N] ')).upper()
+    if continuar in 'Nnnão':
+        break
 
 # Análise
 pesado = cadastros[0][1]
