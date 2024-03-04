@@ -10,6 +10,7 @@ while True:
     dados.append(float(input(f'Insira o peso de {dados[0]} em Kg: ')))
     cadastros.append(dados[:])
     cadastrados += 1
+    # Uma alternativa seria, ao fim, pedir len(cadastros)
     dados.clear()
     continuar = str(input('Continuar cadastros? [S/N] ')).upper()
     if continuar in 'Nnnão':
